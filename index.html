@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Stationery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>ChinguGo Shop</h1>
+        <p>Toko Merch Kpop</p>
+    </header>
+
+    
+    <section class="produk">
+
+        <article class="produk">
+            <div class="gambar">
+                <img src="Enhypen lightstick.jpg" alt="lightstick">
+            </div>
+
+            <h3>lightstick</h3>
+            <p><button>Rp800.000</button></p>
+        </article>
+
+        <article class="produk">
+            <div class="gambar">
+                <img src="baju cortis.jpg" alt="baju cortis">
+            </div>
+            <h3>Kaos Custom</h3>
+            <p>Rp115.000</p>
+        </article>
+
+        <article class="produk">
+            <div class="gambar">
+                <img src="Stray kids Do it.jpg" alt="Stray kids Do it">
+            </div>
+            <h3>Album</h3>
+            <p>Rp500.000</p>
+        </article>
+
+    </section>
+
+    
+    <form id="formPesan" action="#" method="get">
+
+        <h2>FORM PEMESANAN</h2>
+        <label for="nama">Nama Pemesan:</label>
+      <textarea type="text" id="nama" name="nama"
+        required minlength="3" maxlength="50"></textarea>
+
+        
+        <label for="hp">Nomor HP:</label>
+        <input type="tel" id="hp" name="hp"
+        required pattern="[0-9]{10,13}"
+        title="Isi 10 sampai 13 angka">
+
+        
+        <label for="produk">Produk:</label>
+        <select id="produk" name="produk" required>
+            <option value="">-- Pilih --</option>
+            <option value="Lightstick">Lightstick</option>
+            <option value="Kaos Custom">Kaos Custom</option>
+            <option value="Album">Album</option>
+        </select>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah"
+        required min="1" max="20">
+
+        <label>Metode Bayar:</label>
+
+        <div class="radio">
+            <input type="radio" id="transfer"
+            name="bayar" value="Transfer" required>
+            <label for="transfer">Transfer</label>
+
+            <input type="radio" id="cod"
+            name="bayar" value="COD">
+            <label for="cod">COD</label>
+        </div>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat"
+        required minlength="10" maxlength="200"></textarea>
+
+        <button type="submit">Pesan</button>
+
+    </form>
+
+    <footer>
+        <p>Kontak Toko: 081234567890</p>
+        <p>Alamat:Jalan Jason ganteng, Jawa Timur</p>
+        <p>&copy; 2026 ChinguGo Shop</p>
+    </footer>
+
+</body>
+</html>

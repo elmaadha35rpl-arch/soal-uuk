@@ -1,0 +1,124 @@
+_+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #bb35b47c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+section.produk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+article.produk {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gambar {
+    width: 100%;
+    height: 180px;
+    background-color: #dce8f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#formPesan {
+    background-color: white;
+    border: 1px solid #aaa;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#formPesan h2 {
+    text-align: center;
+    color: #bb35b47c;
+    margin-bottom: 25px;
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio input {
+    width: auto;
+}
+
+.radio label {
+    margin: 0;
+    font-weight: normal;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+
+button {
+    background-color: #bb35b49d;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9bc7f3;
+}
+
+footer {
+    background-color: #bb35b47c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
